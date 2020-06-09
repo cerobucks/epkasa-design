@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>EPKasa</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+ 
+<!----------------------HEADER-------------------------------->
+    <header class="site-header inicio">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="img/logo-epkasa.png" alt="Logotipo">
+                </a>
+                <nav class="navegacion">
+                    <ul class="menu">
+                      <li><a href="busqueda.html">Comprar</a></li> 
+                      <li><a href="busqueda.html">Alquilar</a></li>
+                      <li><a href="venta.html">Venta</a></li>
+                      <li><a href="nosotros.html">Nosotros</a></li>
+                     <li><a href="asociados.html">Asociados</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                     <li><a href="contacto.html">Contacto</a></li>
+                    <li class="btn-cliente"><a href="#">Área de Clientes</a></li>
+                    </ul>
+                    
+                </nav>
+            </div><!--END-BARRA-->
+        </div><!--END-CONTENEDOR-->
+    </header><!-------END HEADER---------->
+
+<main class="site-catalogo">
+         <div class="container">
+
+            <div class="filter">
+                 
+                    <h3>Filtros de Búsqueda</h3>
+                    <div class="filter-search central-contenido">
+                    <form action="">
+
+                     <label for="ciudad">Ciudad:</label>
+                     <input type="text" id="ciudad" placeholder="Ciudad o Sector">
+                      <br>
+                      <hr>
+                     <label for="inmueble">Tipo de Inmueble:</label>
+                     <select  placeholder="Tipo de Inmueble" id="inmueble" >
+                      <option disabled selected>Tipo de Inmueble </option>
+                                    <option value="1">Apartamentos</option>
+                                    <option value="10">PentHouse</option>
+                                    <option value="2">Casas</option>
+                                    <option value="11">Solares</option>
+                                    <option value="13">Hoteles</option>
+                                    <option value="12">Villas</option>
+                                    <option value="8">Fincas</option>
+                                    <option value="7">Naves</option>
+                                    <option value="5">Edificios</option>
+                                    <option value="14">Negocios</option>
+                                  </select>
+<hr>
+
+                      <div class="action2">
+                         <label for="habitacion">Habitacion:</label>
+                         <div class="option">
+                        <label><input type="radio" name="action" value="1" class="label1"  ><span>1</span></label>
+                        <label><input type="radio" name="action" value="2"  class="label2"><span>2</span></label>
+                        <label><input type="radio" name="action" value="3"  class="label3"><span>3</span></label>
+                        <label><input type="radio" name="action" value="4"  class="label4"><span>4</span></label>
+                        <label><input type="radio" name="action" value="5"  class="label5"><span>5</span></label>
+                      </div>
+                    </div>
+<hr>
+                    <div class="action2">
+                      <label for="habitacion">Baños:</label>
+                      <div class="option-2">
+                     <label><input type="radio" name="action-2" value="6" class="label6"  ><span>1</span></label>
+                     <label><input type="radio" name="action-2" value="7"  class="label7"><span>2</span></label>
+                     <label><input type="radio" name="action-2" value="8"  class="label8"><span>3</span></label>
+                     <label><input type="radio" name="action-2" value="9"  class="label9"><span>4</span></label>
+                     <label><input type="radio" name="action-2" value="10"  class="label10"><span>5</span></label>
+                     </div>
+                 </div>
+
+<hr>
+                 <div class="action2">
+                  <label for="habitacion">Parqueos:</label>
+                  <div class="option-3">
+                 <label><input type="radio" name="action-3" value="11" class="label11"  ><span>1</span></label>
+                 <label><input type="radio" name="action-3" value="12"  class="label12"><span>2</span></label>
+                 <label><input type="radio" name="action-3" value="13"  class="label13"><span>3</span></label>
+                 <label><input type="radio" name="action-3" value="14"  class="label14"><span>4</span></label>
+                 <label><input type="radio" name="action-3" value="15"  class="label15"><span>5</span></label>
+                 </div>
+             </div>
+      <hr>          
+               <div class="option-price">
+                <label for="price">Precio:</label>
+            
+          <div class="prices">
+            <div class="price1">
+            <label for="minimo">Minimo:</label>
+              <input type="text"  id="minimo" placeholder="$">
+            </div>
+          
+              <div class="price1">
+              <label for="maximo">Maximo:</label>
+              <input type="text" id="maximo"  placeholder="$">
+            </div>
+          </div>
+               </div>
+        <input type="submit" class="btn btn-primario" value="Guardar Busqueda">
+                   </form>
+
+                  </div><!--end-Filter-search-->
+           </div><!---end-filter-->
+
+
+           <div class="result-content central-contenido">
+            <div class="buscador central-contenido">
+        
+              <div class="action ">
+                  <label><input type="radio" name="action" value="1" class="label1"  checked ><span>Comprar</span></label>
+                  <label><input type="radio" name="action" value="2"  class="label2"><span>Alquilar</span></label>
+              </div>
+              <form class="search ">
+              <input type="text" name="" class="text" placeholder="¿Qué estás buscando?">
+            <input type="submit" name="" class="submit fas fa-search" value="Buscar"> 
+          </form>
+        </div>
+  
+          
+              
+            <div class="central-contenido">
+              <h4>Resultados de su búsqueda</h4>
+              <hr>
+            </div>
+            
+         <div class="cards-anuncios central-contenido ">
+          
+             <div class="anuncios-card">
+              <img src="img/anuncio1.jpg" alt="anuncio1">
+              <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
+              <div class="contenido-anuncios">
+                  <div class="encabezado-anuncios">
+               
+                    <h3 >US$85,000</h3>
+                  </div>
+                    <hr>
+                    <ul class="iconos">
+                      <li>
+                          <p><i class="fas fa-bed"></i> 3 </p> 
+                      </li>
+                      <li>
+                        <p><i class="fas fa-bath"></i> 3 </p> 
+                    </li>
+                    <li>
+                        <p><i class="fas fa-car"></i> 3 </p> 
+                    </li>
+                  </ul>
+              </div>
+          </div><!--CARDS--->
+
+          <div class="anuncios-card">
+            <img src="img/anuncio1.jpg" alt="anuncio1">
+            <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
+            <div class="contenido-anuncios">
+                <div class="encabezado-anuncios">
+             
+                  <h3 class="precio">US$85,000</h3>
+                </div>
+                  <hr>
+                  <ul class="iconos">
+                    <li>
+                        <p><i class="fas fa-bed"></i> 3 </p> 
+                    </li>
+                    <li>
+                      <p><i class="fas fa-bath"></i> 3 </p> 
+                  </li>
+                  <li>
+                      <p><i class="fas fa-car"></i> 3 </p> 
+                  </li>
+                </ul>
+            </div>
+        </div><!--CARDS--->
+
+        <div class="anuncios-card">
+          <img src="img/anuncio1.jpg" alt="anuncio1">
+          <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
+          <div class="contenido-anuncios">
+              <div class="encabezado-anuncios">
+           
+                <h3 class="precio">US$85,000</h3>
+              </div>
+                <hr>
+                <ul class="iconos">
+                  <li>
+                      <p><i class="fas fa-bed"></i> 3 </p> 
+                  </li>
+                  <li>
+                    <p><i class="fas fa-bath"></i> 3 </p> 
+                </li>
+                <li>
+                    <p><i class="fas fa-car"></i> 3 </p> 
+                </li>
+              </ul>
+          </div>
+      </div><!--CARDS--->
+
+      <div class="anuncios-card">
+        <img src="img/anuncio1.jpg" alt="anuncio1">
+        <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
+        <div class="contenido-anuncios">
+            <div class="encabezado-anuncios">
+         
+              <h3 class="precio">US$85,000</h3>
+            </div>
+              <hr>
+              <ul class="iconos">
+                <li>
+                    <p><i class="fas fa-bed"></i> 3 </p> 
+                </li>
+                <li>
+                  <p><i class="fas fa-bath"></i> 3 </p> 
+              </li>
+              <li>
+                  <p><i class="fas fa-car"></i> 3 </p> 
+              </li>
+            </ul>
+        </div>
+    </div><!--CARDS--->
+
+    <div class="anuncios-card">
+      <img src="img/anuncio1.jpg" alt="anuncio1">
+      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
+      <div class="contenido-anuncios">
+          <div class="encabezado-anuncios">
+       
+            <h3 >US$85,000</h3>
+          </div>
+            <hr>
+            <ul class="iconos">
+              <li>
+                  <p><i class="fas fa-bed"></i> 3 </p> 
+              </li>
+              <li>
+                <p><i class="fas fa-bath"></i> 3 </p> 
+            </li>
+            <li>
+                <p><i class="fas fa-car"></i> 3 </p> 
+            </li>
+          </ul>
+      </div>
+  </div><!--CARDS--->
+
+  <div class="anuncios-card">
+    <img src="img/anuncio1.jpg" alt="anuncio1">
+    <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
+    <div class="contenido-anuncios">
+        <div class="encabezado-anuncios">
+     
+          <h3 class="precio">US$85,000</h3>
+        </div>
+          <hr>
+          <ul class="iconos">
+            <li>
+                <p><i class="fas fa-bed"></i> 3 </p> 
+            </li>
+            <li>
+              <p><i class="fas fa-bath"></i>3 </p> 
+          </li>
+          <li>
+              <p><i class="fas fa-car"></i> 3 </p> 
+          </li>
+        </ul>
+    </div>
+</div><!--CARDS--->
+
+<div class="anuncios-card">
+  <img src="img/anuncio1.jpg" alt="anuncio1">
+  <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
+  <div class="contenido-anuncios">
+      <div class="encabezado-anuncios">
+   
+        <h3 class="precio">US$85,000</h3>
+      </div>
+        <hr>
+        <ul class="iconos">
+          <li>
+              <p><i class="fas fa-bed"></i> 3 </p> 
+          </li>
+          <li>
+            <p><i class="fas fa-bath"></i> 3 </p> 
+        </li>
+        <li>
+            <p><i class="fas fa-car"></i> 3 </p> 
+        </li>
+      </ul>
+  </div>
+</div><!--CARDS--->
+
+<div class="anuncios-card">
+<img src="img/anuncio1.jpg" alt="anuncio1">
+<p><i class="fas fa-map-marker-alt"></i> Santiago</p>
+<div class="contenido-anuncios">
+    <div class="encabezado-anuncios">
+ 
+      <h3 class="precio">US$85,000</h3>
+    </div>
+      <hr>
+      <ul class="iconos">
+        <li>
+            <p><i class="fas fa-bed"></i> 3 </p> 
+        </li>
+        <li>
+          <p><i class="fas fa-bath"></i> 3 </p> 
+      </li>
+      <li>
+          <p><i class="fas fa-car"></i> 3 </p> 
+      </li>
+    </ul>
+</div>
+</div><!--CARDS--->
+
+        </div><!--CARDS-ANUNCIOS-->
+            </div> <!--END-CONTENT-->
+            </div><!--END-CONTAINER-->
+</main>
+
+
+
+
+
+
+
+   
+    <!------------------------------FOOTER----------------------------->
+    <footer class="site-footer ">
+      <div class="contenedor contenido-footer">
+
+            <div class="ubicacion">
+              <h3>Nuestra <span>Ubicacion</span></h3>
+              <h4>Santiago</h4> 
+               <p><i class="fas fa-map-marker-alt"></i>  Av. Juan Pablo Duarte, Centro Comercial La Trinitaria, Mod. 104, La Trinitaria, Santiago, República Dominicana</p>
+                  <p><i class="fas fa-phone-alt"></i>+1(809) 581-4919</p>
+                   <p><i class="fas fa-envelope"></i> info@epkasa.com</p>
+                <h4>Jarabacoa</h4>
+               <p><i class="fas fa-map-marker-alt"></i> Calle Paseo de los Maestros, Plaza Belliard, Mod. 202, Jarabacoa. República Dominicana.</p> 
+               <p><i class="fas fa-phone-alt"></i> +1(809) 574-7575</p>
+              <p> <i class="fas fa-envelope"></i> info@epkasa.com</p>
+            </div>
+
+            
+            <div class="footer-informacion">
+              <h3>Sobre <span>EPKasa </span></h3>
+              <p>Se creó el 15 de Julio del 2010, fundada por su actual Gerente General el Sr. Eddy Manuel Peña, brindando a sus clientes un servicio selecto y exclusivo en el que se les da la posibilidad de vender o alquilar sus inmuebles en República Dominicana.</p>
+          </div>
+      
+          <div >
+              <h3>Redes <span>Sociales</span></h3>
+              <nav class="redes-sociales">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-youtube"></i></a>
+              </nav>
+          </div>
+        
+       
+
+      </div>
+
+  </footer>
+  <p class="copyright">
+      Todos los Derechos Reservados 2020
+  </p>
+
+
+</body>
+
+</html>
