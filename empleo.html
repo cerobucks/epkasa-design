@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/all.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -53,74 +51,63 @@
     </nav>
   
   </header><!-------END HEADER---------->
-  <nav aria-label="breadcrumb">
+
+  <nav aria-label="breadcrumb ">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-        <li class="breadcrumb-item active">Venta</li>
+        <li class="breadcrumb-item active">Empleo</li>
     </ol>
 </nav>
-<section class="container pt-5">
-    <h1 class="color pb-5">Venta</h1>
-    <div class="form-vender row">
+    <section class="container  py-5">
+        <h1 class="color pb-5">Solicitud de Empleo</h1>
+        <div class="form-vender ">
+            <div class="container_vender central-contenido text-center  py-5">
+    
+              <form id="" action="" method="POST" enctype="">
+                <h4>Trabaja con nosotros…</h4>
+                <p>Completa el siguiente formulario y te contactaremos</p>
+                <hr>
+                <div class="form-group">
+                  <input placeholder="Nombre y apellidos" type="text" class="form-control required" name="fullname">
+                </div>
+                <div class="form-group">
+                  <input placeholder="Correo Electrónico" type="email" class="form-control required_email" name="email">
+                </div>
+                <div class="form-group">
+                  <input placeholder="Teléfono o Celular" type="text" class="form-control required" name="phone">
+                </div>
+                <div class="form-group">
+                  <input placeholder="No. de Cedula" type="text" class="form-control required" name="cid">
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Por que crees que serías un buen candidato para nosotros" class="form-control required" rows="4" name="message"></textarea>
+                </div>
+                <div class="form-group text-left">
+                  <label class="d-block">Tienes experiencia en el sector de bienes raices?</label>
+                  <div class="custom-control custom-radio d-inline mr-3">
+                    <input class="custom-control-input" type="radio" value="SI" id="experienceSI" name="experience" checked="">
+                    <label class="custom-control-label" for="experienceSI">Si</label>
+                  </div>
+                  <div class="custom-control custom-radio d-inline">
+                    <input class="custom-control-input" type="radio" value="NO" id="experienceNO" name="experience">
+                    <label class="custom-control-label" for="experienceNO">No</label>
+                  </div>
+                </div>
+                <div class="form-group text-left">
+                  <label>Adjuntar CV</label>
+                  <div class="input-group input-group-lg">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" name="cv">
+                      <label class="custom-file-label">Elegir Archivo</label>
+                    </div>								
+                <input type="hidden" name="_token" value="PlQ6jEcLoorEL32PmKoKr6IJkJucELzBHXFFk7RF">
+                <button type="submit" class="btn btn-primario btn-block btn-lg">ENVIAR MENSAJE</button>
+              </form>
+    </div><!---end-container-vender-->
+    </div><!--end-form-vender-->
+    
      
-        <div class="texto col-md-6 ">
-            
-            <ul>
-                <h3><b>
-                    Conoce las ventajas de promocionar con EPKasa</b></h3>
-                    <hr>
-                <li>
-                  - Fotografías profesionales y de alta calidad.
-                </li>
-                <li>
-                  - Equipo de asesores inmobiliarios profesionales.
-                </li>
-                <li>
-                   - Resultados garantizados.
-                </li>
-                <li>
-                   - Alta exposición en internet a través de nuestro portal web y los principales portales de clasificados del país.
-                </li>
-                <li>
-                   - Reportes profesionales con detalles del avance en la promoción de tu inmueble.
-                </li>
-            </ul>
-        </div>
-
-        <div class="container_vender col-md-6 py-5">
-
-        <h3><b> Formulario Venta de inmueble</b></h3>
-        <hr>
-    <form action="">
-            <input type="text" placeholder="Nombre y apellidos">
-            <input type="email" placeholder="Correo Eletrónico">
-            <input type="text" placeholder="Telefóno">
-            <select  placeholder="Tipo de Inmueble" >
-                <option disabled selected>Tipo de Inmueble </option>
-                              <option value="1">Apartamentos</option>
-                              <option value="10">PentHouse</option>
-                              <option value="2">Casas</option>
-                              <option value="11">Solares</option>
-                              <option value="13">Hoteles</option>
-                              <option value="12">Villas</option>
-                              <option value="8">Fincas</option>
-                              <option value="7">Naves</option>
-                              <option value="5">Edificios</option>
-                              <option value="14">Negocios</option>
-                            </select>
-            <input type="text" placeholder="Ubicación">
-            <textarea name="Descripción" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
-            <br>
-            <input type="submit" class="btn btn-primario" value="Enviar Mensaje">
-    </form>
-</div><!---end-container-vender-->
-</div><!--end-form-vender-->
-
- 
-</section>
-
-
-   
+    </section>
     <!------------------------------FOOTER----------------------------->
     <footer class="site-footer">
         <div class="container">
@@ -163,7 +150,9 @@
       Todos los Derechos Reservados 2020
   </p>
 
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 </body>
 
 </html>

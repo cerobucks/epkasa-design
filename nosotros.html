@@ -8,44 +8,168 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
  
 <!----------------------HEADER-------------------------------->
-    <header class="site-header inicio">
-        <div class="contenedor">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="img/logo-epkasa.png" alt="Logotipo">
+<header class="sticky-top">  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo-epkasa.png" alt="Logotipo">
+           
+        </a>
+  
+        <button type="button" class="navbar-toggler"  data-toggle="collapse" data-target="#mobil">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="mobil">
+        <ul class="navbar-nav ml-auto">
+            <li  class="nav-item"><a class="nav-link p-3" href="busqueda.html">Comprar</a></li> 
+            <li  class="nav-item"><a class="nav-link p-3" href="busqueda.html">Alquilar</a></li>
+            <li  class="nav-item"><a class="nav-link p-3" href="venta.html">Venta</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Nosotros
                 </a>
-                <nav class="navegacion">
-                    <ul class="menu">
-                    <li><a href="busqueda.html">Comprar</a></li> 
-                     <li><a href="busqueda.html">Alquilar</a></li>
-                     <li><a href="venta.html">Venta</a></li>
-                     <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="asociados.html">Asociados</a></li>
-                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li class="btn-cliente"><a href="#">Área de Clientes</a></li>
-                    </ul>
-                    
-                </nav>
-            </div><!--END-BARRA-->
-        </div><!--END-CONTENEDOR-->
-    </header><!-------END HEADER---------->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="nosotros.html">¿Quiénes Somos?</a>
+                    <a class="dropdown-item" href="empleo.html">Empleo</a>
+                  
+              </li>
+           <li class="nav-item"><a class="nav-link p-3"href="asociados.html">Asociados</a></li>
+            <li class="nav-item"><a class="nav-link p-3" href="blog.html">Blog</a></li>
+           <li class="nav-item"><a class="nav-link p-3" href="contacto.html">Contacto</a></li>
+        <li class="nav-item "><button class="btn-cliente p-3">Área de Clientes</button></li>
+        </ul>
+    </div>
+       </div>
+    </nav>
+  
+  </header><!-------END HEADER---------->
 
-    <h1>In construction</h1>
+  <nav aria-label="breadcrumb ">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active">¿Quiénes Somos?</li>
+    </ol>
+</nav>
 
 
+    <section class="container py-5">
+
+        <h1 class="color pb-5">¿Quiénes Somos?</h1>
+        <div class="row">
+            
+            <div class="col-md-6">
+           <img src="img/equipo.PNG"  height="300px" alt="">
+            </div>
+
+    <div class="col-md-6 my-3">
+    <h3>EPKasa Real Estate</h3>
+    <p class="text-justify">Se creó el 15 de Julio del 2010, fundada por su actual Gerente General el Sr. Eddy Manuel Peña, brindando a sus clientes un servicio selecto y exclusivo en el que se les da la posibilidad de vender o alquilar sus inmuebles en República Dominicana.</p>
+      <p class="text-justify">Contamos con un personal altamente calificado, lo cual nos ha permitido colaborar de forma activa en la regularización del mercado inmobiliario junto a la AEI – Asociación de Empresas Inmobiliarias – llegando a ser directivos en la Zona Norte en el período 2015-2016 con la posición de Tesoreros y la Presidencia, bajo el liderazgo del Sr. Eddy Manuel Peña, en el 2018-2019</p>
+</div>
+    </div> <!--End-Row-->
+
+    <section >
+        <div class="container">
+                 <div class="title mt-5">
+                    <h1 class="mb-2">Nuestra Ubicación</h1> 
+                 </div>
+
+                 <div class="row">
+                    <div class="col-md-4 mb-3"><!--CARD-->
+                        <div class="card text-center">
+                            <div class="card-img-top pt-5 display-1 color">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Santiago</h3>
+                            </div>
+                            <a href=""  class="text-decoration-none"><i class="fas fa-search-location pr-2"></i>Ver Ubicación</a>
+                        </div>
+                    </div><!--END-CARD-->
+                    <div class="col-md-4 mb-3"><!--CARD-->
+                        <div class="card text-center">
+                            <div class="card-img-top pt-5 display-1 color">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Jarabacoa</h3>
+                            </div>
+                            <a href=""  class="text-decoration-none"><i class="fas fa-search-location pr-2"></i>Ver Ubicación</a>
+                        </div>
+                    </div><!--END-CARD-->
+                    <div class="col-md-4 mb-3"><!--CARD-->
+                        <div class="card text-center">
+                            <div class="card-img-top pt-5 display-1 color">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Santo Domingo</h3>
+                            </div>
+                            <a href=""  class="text-decoration-none"><i class="fas fa-search-location pr-2"></i>Ver Ubicación</a>
+                        </div>
+                    </div><!--END-CARD-->
+
+
+                 </div>
+        </div>
+</section>
+ 
+        <ul class="nav nav-tabs my-5" id="myTab" role="tablist">
+            <li class="nav-item color" role="presentation">
+              <a class="nav-link active color" id="service-tab" data-toggle="tab" href="#service" role="tab" aria-controls="service" aria-selected="true">Servicios</a>
+            </li>
+            <li class="nav-item color" role="presentation">
+              <a class="nav-link color" id="philosophytab" data-toggle="tab" href="#philosophy" role="tab" aria-controls="philosophy" aria-selected="false">Filosofía</a>
+            </li>
    
-    <!------------------------------FOOTER----------------------------->
-    <footer class="site-footer ">
-      <div class="contenedor contenido-footer">
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="service" role="tabpanel" aria-labelledby="service-tab">
+                <div class="container">
+               <ol class="pt-2 text-muted">
+               <li>- Gestión de compra-venta de su propiedad.</li> 
+                <li>- Asesoría inmobiliaria integral para comprar o vender apartamentos, casas, locales, terrenos, villas y mas.</li>
+                <li>- Localización de su inmueble ideal para comprar o alquilar: apartamentos, casas, locales y naves industriales en República Dominicana.</li>
+                <li>- Asesoría relacionada con Préstamo hipotecario para comprar casa, apartamento, solar o local comercial en República Dominicana.</li>
+            </ol>
 
-            <div class="ubicacion">
+            <p class="text-muted font-weight-bold pt-4">Nuestros clientes</p> 
+<p class="text-justify">A lo largo de nuestra trayectoria como agentes de bienes raíces, hemos contado con la confianza, satisfacción y éxito compartido con nuestros clientes, muchos de ellos, dominicanos residentes en los Estados Unidos. También hemos contado con clientes de distintas nacionalidades como rusos, italianos, españoles, estadounidenses entre otros. De igual forma, hemos tenido clientes residentes en el país principalmente de Santiago, Jarabacoa, Santo Domingo y Cibao.
+</p>
+</div>
+</div>
+            <div class="tab-pane fade" id="philosophy" role="tabpanel" aria-labelledby="philosophy-tab">
+                <p>Está basada en ofrecer una gestión eficaz, profesional y sobretodo personalizada para que el servicio sea el más correcto y adecuado a las necesidades reales de los clientes y sus propiedades.</p>
+                <p class="text-muted font-weight-bold pt-4">Misión</p> 
+                <p>Brindar a nuestros clientes nacionales y extranjeros un servicio de asesoría inmobiliaria confiable, con apego al código de ética de nuestra profesión y comprometidos con la calidad del servicio y la satisfacción de nuestros clientes.</p>
+                <p class="text-muted font-weight-bold pt-4">Visión</p> 
+                <p>Ser la primera opción de gestión inmobiliaria en la República Dominicana, con una amplia propuesta inmobiliaria para nuestros clientes, creada por una trayectoria honesta de trabajo, tecnología avanzada y un personal altamente capacitado.</p>
+                <p class="text-muted font-weight-bold pt-4">Valores</p> 
+                <ol class="pt-1 text-muted">
+                    <li>- Honestidad</li> 
+                     <li>- Calidad de Servicio</li>
+                     <li>- Responsabilidad</li>
+                     <li>- Trabajo en Equipo</li>
+                 </ol>
+            </div>
+            
+          </div>
+     
+    </section>
+    <!------------------------------FOOTER----------------------------->
+    <footer class="site-footer">
+        <div class="container">
+      <div class="row">
+
+            <div class="ubicacion col-md-4">
               <h3>Nuestra <span>Ubicacion</span></h3>
               <h4>Santiago</h4> 
                <p><i class="fas fa-map-marker-alt"></i>  Av. Juan Pablo Duarte, Centro Comercial La Trinitaria, Mod. 104, La Trinitaria, Santiago, República Dominicana</p>
@@ -58,14 +182,14 @@
             </div>
 
             
-            <div class="footer-informacion">
+            <div class="footer-informacion col-md-4">
               <h3>Sobre <span>EPKasa </span></h3>
               <p>Se creó el 15 de Julio del 2010, fundada por su actual Gerente General el Sr. Eddy Manuel Peña, brindando a sus clientes un servicio selecto y exclusivo en el que se les da la posibilidad de vender o alquilar sus inmuebles en República Dominicana.</p>
           </div>
       
-          <div >
+          <div class="col-md-4">
               <h3>Redes <span>Sociales</span></h3>
-              <nav class="redes-sociales">
+              <nav class="redes-sociales ">
                   <a href=""><i class="fab fa-facebook-f"></i></a>
                   <a href=""><i class="fab fa-instagram"></i></a>
                   <a href=""><i class="fab fa-twitter"></i></a>
@@ -76,13 +200,15 @@
        
 
       </div>
-
+    </div>
   </footer>
   <p class="copyright">
       Todos los Derechos Reservados 2020
   </p>
 
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
 </body>
 
 </html>

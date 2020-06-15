@@ -7,6 +7,9 @@
     <title>EPKasa</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="flexslider.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script src="js/jquery.flexslider.js"></script>
@@ -26,35 +29,47 @@
 <body>
  
 <!----------------------HEADER-------------------------------->
-    <header class="site-header inicio">
-        <div class="contenedor">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="img/logo-epkasa.png" alt="Logotipo">
-                </a>
-                <nav class="navegacion">
-                    <ul class="menu">
-                    <li><a href="busqueda.html">Comprar</a></li> 
-                     <li><a href="busqueda.html">Alquilar</a></li>
-                     <li><a href="#">Venta</a></li>
-                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Asociados</a></li>
-                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li class="btn-cliente"><a href="#">Área de Clientes</a></li>
-                    </ul>
-                    
-                </nav>
-            </div><!--END-BARRA-->
-        </div><!--END-CONTENEDOR-->
-    </header><!-------END HEADER---------->
+<header class="sticky-top">  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <div class="container">
+      <a class="navbar-brand" href="index.html">
+          <img src="img/logo-epkasa.png" alt="Logotipo">
+         
+      </a>
+
+      <button type="button" class="navbar-toggler"  data-toggle="collapse" data-target="#mobil">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mobil">
+      <ul class="navbar-nav ml-auto">
+          <li  class="nav-item"><a class="nav-link p-3" href="busqueda.html">Comprar</a></li> 
+          <li  class="nav-item"><a class="nav-link p-3" href="busqueda.html">Alquilar</a></li>
+          <li  class="nav-item"><a class="nav-link p-3" href="venta.html">Venta</a></li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Nosotros
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="nosotros.html">¿Quiénes Somos?</a>
+                <a class="dropdown-item" href="empleo.html">Empleo</a>
+                
+            </li>
+         <li class="nav-item"><a class="nav-link p-3"href="asociados.html">Asociados</a></li>
+          <li class="nav-item"><a class="nav-link p-3" href="blog.html">Blog</a></li>
+         <li class="nav-item"><a class="nav-link p-3" href="contacto.html">Contacto</a></li>
+      <li class="nav-item "><button class="btn-cliente p-3">Área de Clientes</button></li>
+      </ul>
+  </div>
+     </div>
+  </nav>
+
+</header><!-------END HEADER---------->
 <!---------------------------Slider----------------------------------->
-
-
-
-
     <section class="header-propiedad">
-        <div class="contenedor propiedad">
+        <div class="container propiedad">
+          <div class="row">
+            <div class="col-md-7">
         <div class="flexslider">
             <ul class="slides">
               <li>
@@ -71,10 +86,11 @@
               </li>
             </ul>
           </div>
-
-          <div class="descripcion">
+        </div><!--END-COL-->
+        <div class="col-md">
+          <div class="descripcion ">
               <div class="contenido-descripcion">
-            <h2>Apartamentos en venta en Residencial Don Bosco.</h2>
+            <h2 class="pt-3">Apartamentos en venta en Residencial Don Bosco.</h2>
                
              
                 <p class="ubicacion2"><i class="fas fa-map-marker-alt"></i> Santiago</p>
@@ -86,16 +102,16 @@
              
             
                 <ul class="contenido-propiedad">
-                  <li>
+                  <li class="pr-3">
                       <p><i class="fas fa-bed"></i> 3 Habitaciones </p> 
                   </li>
-                  <li>
+                  <li class="pr-3">
                     <p><i class="fas fa-bath"></i> 2 Baños</p> 
                 </li>
-                <li>
+                <li class="pr-3">
                     <p><i class="fas fa-car"></i> 1 Parqueo</p> 
                 </li>
-                <li>
+                <li class="pr-3">
                     <p><i class="fas fa-ruler"></i> 95.00 Mt2</p> 
                 </li>
               </ul>
@@ -110,59 +126,22 @@
          </div> <!--END Contenido-Descripcion-->
 
         </div><!--END Descripcion-->
+      </div>
+      </div><!--END-ROW-->
     </div>
         </section>
 
-<main class="contenedor" >
+<main class="container" >
 
-         
          <div class="info">
-      
-            <div class="datos-basicos">
-              <h2 class="margin2">Datos Basicos</h2>
-      <ul class="margin2">
-        <li>Tipo de Inmueble: <p>Apartamentos</p></li>
-        <li>Habitaciones: <p>4</p></li>
-        <li>Construccion Mt: <p>95.00 Mt2</p></li>
-        <li>Separacion: <p>none</p></li>
-        <li>Fecha Entrega: <p>
-          <select >
-                        <option value="1">15/03/2021	1er Etapa</option>
-                        <option value="2"> 30/08/2021	2da Etapa</option>
-                        <option value="3">15/02/2022	3ra Etapa</option>
-                      </select></p></li>
-        <li>Operación: <p>Venta</p></li>
-        <li>Baños: <p>2</p></li>
-        <li>Terreno Mt : <p>none</p></li>
-        <li>Inicial %: <p>none</p></li>
-        <li>Parqueos : <p>1</p></li>
-        <li>Precio : <p>US$ 67,000.00</p></li>
-        <li>Medio Baño: <p>none</p></li>
-        <li>Estado: <p>Planos</p></li>
-        <li>Nombre Residencial: <p>Don Bosco</p></li>
-        <li>Niveles Disponibles: <p>none</p></li>
-        <li>Cuarto Servicio: <p>none</p></li>
-      </ul>
-            </div>
-
-
-
-
-
-<hr>
-
-
-<h1>Descripción</h1>
+<h1 class="pt-5">Descripción</h1>
 <p class="margin2">Residencial Don Bosco es un proyecto de apartamentos estilo resort ubicados en Pontezuela Ave. 27 de febrero.
     Nos place presentarles este hermoso proyecto de apartamentos en planos ubicado en una de las avenidas más céntricas de esta ciudad de Santiago 27 de febrero, próximo a supermercados centros comerciales colegios y vías de transporte etc. </p>
 
 <hr>
 
-
                     <fieldset class="margin2">
                       <legend><h2>Características</h2></legend>
-                
-
                   <div class="features flex">
        <ul>
          <li><span>0</span> Patio</li>
@@ -207,7 +186,7 @@
 
             </div>
 </main>
-   <section class="contenedor">
+   <section class="container">
 <h2 class="text-titulo">Propiedades Recientes</h2>
 <div class="cards">
      <div class="card">
@@ -403,42 +382,43 @@
 
 
     <!------------------------------FOOTER----------------------------->
-    <footer class="site-footer ">
-      <div class="contenedor contenido-footer">
+    <footer class="site-footer">
+      <div class="container">
+    <div class="row">
 
-            <div class="ubicacion">
-              <h3>Nuestra <span>Ubicacion</span></h3>
-              <h4>Santiago</h4> 
-               <p><i class="fas fa-map-marker-alt"></i>  Av. Juan Pablo Duarte, Centro Comercial La Trinitaria, Mod. 104, La Trinitaria, Santiago, República Dominicana</p>
-                  <p><i class="fas fa-phone-alt"></i>+1(809) 581-4919</p>
-                   <p><i class="fas fa-envelope"></i> info@epkasa.com</p>
-                <h4>Jarabacoa</h4>
-               <p><i class="fas fa-map-marker-alt"></i> Calle Paseo de los Maestros, Plaza Belliard, Mod. 202, Jarabacoa. República Dominicana.</p> 
-               <p><i class="fas fa-phone-alt"></i> +1(809) 574-7575</p>
-              <p> <i class="fas fa-envelope"></i> info@epkasa.com</p>
-            </div>
-
-            
-            <div class="footer-informacion">
-              <h3>Sobre <span>EPKasa </span></h3>
-              <p>Se creó el 15 de Julio del 2010, fundada por su actual Gerente General el Sr. Eddy Manuel Peña, brindando a sus clientes un servicio selecto y exclusivo en el que se les da la posibilidad de vender o alquilar sus inmuebles en República Dominicana.</p>
+          <div class="ubicacion col-md-4">
+            <h3>Nuestra <span>Ubicacion</span></h3>
+            <h4>Santiago</h4> 
+             <p><i class="fas fa-map-marker-alt"></i>  Av. Juan Pablo Duarte, Centro Comercial La Trinitaria, Mod. 104, La Trinitaria, Santiago, República Dominicana</p>
+                <p><i class="fas fa-phone-alt"></i>+1(809) 581-4919</p>
+                 <p><i class="fas fa-envelope"></i> info@epkasa.com</p>
+              <h4>Jarabacoa</h4>
+             <p><i class="fas fa-map-marker-alt"></i> Calle Paseo de los Maestros, Plaza Belliard, Mod. 202, Jarabacoa. República Dominicana.</p> 
+             <p><i class="fas fa-phone-alt"></i> +1(809) 574-7575</p>
+            <p> <i class="fas fa-envelope"></i> info@epkasa.com</p>
           </div>
+
+          
+          <div class="footer-informacion col-md-4">
+            <h3>Sobre <span>EPKasa </span></h3>
+            <p>Se creó el 15 de Julio del 2010, fundada por su actual Gerente General el Sr. Eddy Manuel Peña, brindando a sus clientes un servicio selecto y exclusivo en el que se les da la posibilidad de vender o alquilar sus inmuebles en República Dominicana.</p>
+        </div>
+    
+        <div class="col-md-4">
+            <h3>Redes <span>Sociales</span></h3>
+            <nav class="redes-sociales ">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </nav>
+        </div>
       
-          <div >
-              <h3>Redes <span>Sociales</span></h3>
-              <nav class="redes-sociales">
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
-                  <a href=""><i class="fab fa-instagram"></i></a>
-                  <a href=""><i class="fab fa-twitter"></i></a>
-                  <a href=""><i class="fab fa-youtube"></i></a>
-              </nav>
-          </div>
-        
-       
+     
 
-      </div>
-
-  </footer>
+    </div>
+  </div>
+</footer>
   <p class="copyright">
       Todos los Derechos Reservados 2020
   </p>
