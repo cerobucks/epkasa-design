@@ -143,308 +143,441 @@
   
     </section>
 
+    <div class="findFilter">
+      <div class="d-flex justify-content-between">
+        <div>
+      <i class="fas fa-map-marked-alt display-1 text-center color pr-5"></i>
+    </div>
+    <div>
+      <h6>Encuentra tu próximo Inmueble!</h6>
+      <p>Busca entre nuestros apartamentos, penthouses, casas, locales, villas y solares...</p>
+      <button onclick="OpenMobileSearch(true);"><i class="fas fa-search"></i></i>Inicia tu búsqueda</button>
+    </div>
+  </div>
+      
+    
+    </div>
 
     <!---------MAIN-------->
 <main class="container margen">
-    <h2 class="text-titulo">Nuestros Inmuebles </h2>
-   <div class="cards">
-        <div class="card">
-          <a href="propiedad.html" class="text-decoration-none">
-            <img src="img/anuncio1.jpg" alt="anuncio1">
-            <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-            <div class="contenido-card">
-                <div class="encabezado">
-                <h3>Casa de lujo</h3>
-                  <p class="precio">US$85,000</p>
-                </div>
-                  <hr>
-                  <ul class="iconos">
-                    <li>
-                        <p><i class="fas fa-bed"></i> 3 H</p> 
-                    </li>
-                    <li>
-                      <p><i class="fas fa-toilet"></i> 3 B</p> 
-                  </li>
-                  <li>
-                      <p><i class="fas fa-car"></i> 3 P</p> 
-                  </li>
-                </ul>
-            </div>
+    <section class="container">
+      <h2 class="my-5">Nuestros Inmuebles </h2>
+      <div class="row">
+           <div class="col-md-3 mb-3"><!--Card-->
+              <a href="propiedad.html" class="text-decoration-none">
+               <div class="card">
+           
+                      <div class="text-center">
+               <img src="img/anuncio1.jpg"  class="card-img-top" alt="anuncio1">
+               <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+              </div>
+               <div class="card-body">
+                   <div class="d-block">
+                   <h4 class="color">Casa de lujo</h4>
+                   <div class="d-flex justify-content-between">
+                     <p class="font-weight-bold ">US$85,000</p>
+                     <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                     </div>
+                   </div>
+                <hr>
+                     <div class="d-flex flex-row justify-content-center text-muted" >
+                      <div class="pr-5">
+                          <i class="fas fa-bed"></i> 3 H
+                      </div>
+                      <div class="pr-5">
+                        <i class="fas fa-bath"></i> 3 B
+                    </div>
+                    <div class="">
+                      <i class="fas fa-car"></i> 3 P
+                    </div>
+              </div>
+               </div>
+              </div>
           </a>
-        </div>
-
-        <div class="card">
-          <a href="propiedad.html" class="text-decoration-none">
-            <img src="img/anuncio2.jpg" alt="anuncio2">
-            <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-            <div class="contenido-card">
-                <div class="encabezado">
-                    <h3>Casa de lujo</h3>
-                      <p class="precio">US$85,000</p>
-                    </div>
-                  <hr>
-                  <ul class="iconos">
-                    <li>
-                        <p><i class="fas fa-bed"></i> 3 H</p> 
-                    </li>
-                    <li>
-                      <p><i class="fas fa-toilet"></i> 3 B</p> 
-                  </li>
-                  <li>
-                      <p><i class="fas fa-car"></i> 3 P</p> 
-                  </li>
-                </ul>
-            </div>
-            </a>
-        </div>
-
-        <div class="card">
-          <a href="propiedad.html" class="text-decoration-none">
-            <img src="img/anuncio3.jpg" alt="anuncio3">
-            <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-            <div class="contenido-card">
-                <div class="encabezado">
-                    <h3>Casa de lujo</h3>
-                      <p class="precio">US$85,000</p>
-                    </div>
-                  <hr>
-                  <ul class="iconos">
-                    <li>
-                        <p><i class="fas fa-bed"></i> 3 H</p> 
-                    </li>
-                    <li>
-                      <p><i class="fas fa-toilet"></i> 3 B</p> 
-                  </li>
-                  <li>
-                      <p><i class="fas fa-car"></i> 3 P</p> 
-                  </li>
-                </ul>
-            </div>
-            </a>
-        </div>
-
-        <div class="card">
-          <a href="propiedad.html" class="text-decoration-none">
-            <img src="img/anuncio3.jpg" alt="anuncio3">
-            <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-            <div class="contenido-card">
-                <div class="encabezado">
-                    <h3>Casa de lujo</h3>
-                      <p class="precio">US$85,000</p>
-                    </div>
-                  <hr>
-                  <ul class="iconos">
-                    <li>
-                        <p><i class="fas fa-bed"></i> 3 H</p> 
-                    </li>
-                    <li>
-                      <p><i class="fas fa-toilet"></i> 3 B</p> 
-                  </li>
-                  <li>
-                      <p><i class="fas fa-car"></i> 3 P</p> 
-                  </li>
-                </ul>
-            </div>
-            </a>
-        </div>
+           </div> <!--End-card-->
       
-   </div> <!--END CARDS-->
-   <div class="orienta">
-    <a href="#" class="btn btn-primario"> Ver Más Propiedades <i class="fas fa-arrow-right"></i> </a>
-</div>
+           <div class="col-md-3 mb-3"><!--Card-->
+              <a href="propiedad.html" class="text-decoration-none">
+               <div class="card">
+           
+                      <div class="text-center">
+               <img src="img/anuncio2.jpg"  class="card-img-top" alt="anuncio1">
+               <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+              </div>
+               <div class="card-body">
+                   <div class="d-block">
+                   <h4 class="color">Casa de lujo</h4>
+                   <div class="d-flex justify-content-between">
+                     <p class="font-weight-bold ">US$85,000</p>
+                     <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                     </div>
+                   </div>
+                <hr>
+                     <div class="d-flex flex-row justify-content-center text-muted" >
+                      <div class="pr-5">
+                          <i class="fas fa-bed"></i> 3 H
+                      </div>
+                      <div class="pr-5">
+                        <i class="fas fa-bath"></i> 3 B
+                    </div>
+                    <div class="">
+                      <i class="fas fa-car"></i> 3 P
+                    </div>
+              </div>
+               </div>
+              </div>
+          </a>
+           </div> <!--End-card-->
+      
+           <div class="col-md-3 mb-3"><!--Card-->
+              <a href="propiedad.html" class="text-decoration-none">
+               <div class="card">
+           
+                      <div class="text-center">
+               <img src="img/anuncio3.jpg"  class="card-img-top" alt="anuncio1">
+               <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+              </div>
+               <div class="card-body">
+                   <div class="d-block">
+                   <h4 class="color">Casa de lujo</h4>
+                   <div class="d-flex justify-content-between">
+                     <p class="font-weight-bold ">US$85,000</p>
+                     <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                     </div>
+                   </div>
+                <hr>
+                     <div class="d-flex flex-row justify-content-center text-muted" >
+                      <div class="pr-5">
+                          <i class="fas fa-bed"></i> 3 H
+                      </div>
+                      <div class="pr-5">
+                        <i class="fas fa-bath"></i> 3 B
+                    </div>
+                    <div class="">
+                      <i class="fas fa-car"></i> 3 P
+                    </div>
+              </div>
+               </div>
+              </div>
+          </a>
+           </div> <!--End-card-->
+      
+           <div class="col-md-3 mb-3"><!--Card-->
+              <a href="propiedad.html" class="text-decoration-none">
+               <div class="card">
+           
+                      <div class="text-center">
+               <img src="img/anuncio4.jpg"  class="card-img-top" alt="anuncio1">
+               <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+              </div>
+               <div class="card-body">
+                   <div class="d-block">
+                   <h4 class="color">Casa de lujo</h4>
+                   <div class="d-flex justify-content-between">
+                     <p class="font-weight-bold ">US$85,000</p>
+                     <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                     </div>
+                   </div>
+                <hr>
+                     <div class="d-flex flex-row justify-content-center text-muted" >
+                      <div class="pr-5">
+                          <i class="fas fa-bed"></i> 3 H
+                      </div>
+                      <div class="pr-5">
+                        <i class="fas fa-bath"></i> 3 B
+                    </div>
+                    <div class="">
+                      <i class="fas fa-car"></i> 3 P
+                    </div>
+              </div>
+               </div>
+              </div>
+          </a>
+           </div> <!--End-card-->
+      
+         
+      </div><!--END CARDS-->
+            <div class="orienta">
+          <a href="#" class="btn btn-primario"> Ver Más Propiedades <i class="fas fa-arrow-right"></i> </a>
+      </div>
+      
+      </section>
 
 <hr>
 <!--------------PROPIDADES RECIENTES------------------------->
-<h2 class="text-titulo">Propiedades Recientes</h2>
-<div class="cards">
-     <div class="card">
-         <img src="img/anuncio1.jpg" alt="anuncio1">
-         <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-         <div class="contenido-card">
-             <div class="encabezado">
-             <h3>Casa de lujo</h3>
-               <p class="precio">US$85,000</p>
-             </div>
-               <hr>
-               <ul class="iconos">
-                <li>
-                    <p><i class="fas fa-bed"></i> 3 H</p> 
-                </li>
-                <li>
-                  <p><i class="fas fa-toilet"></i> 3 B</p> 
-              </li>
-              <li>
-                  <p><i class="fas fa-car"></i> 3 P</p> 
-              </li>
-            </ul>
-         </div>
-     </div>
-
-     <div class="card">
-         <img src="img/anuncio2.jpg" alt="anuncio2">
-         <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-         <div class="contenido-card">
-             <div class="encabezado">
-                 <h3>Casa de lujo</h3>
-                   <p class="precio">US$85,000</p>
-                 </div>
-               <hr>
-               <ul class="iconos">
-                <li>
-                    <p><i class="fas fa-bed"></i> 3 H</p> 
-                </li>
-                <li>
-                  <p><i class="fas fa-toilet"></i> 3 B</p> 
-              </li>
-              <li>
-                  <p><i class="fas fa-car"></i> 3 P</p> 
-              </li>
-            </ul>
-         </div>
-     </div>
-
-     <div class="card">
-         <img src="img/anuncio3.jpg" alt="anuncio3">
-         <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-         <div class="contenido-card">
-             <div class="encabezado">
-                 <h3>Casa de lujo</h3>
-                   <p class="precio">US$85,000</p>
-                 </div>
-               <hr>
-               <ul class="iconos">
-                <li>
-                    <p><i class="fas fa-bed"></i> 3 H</p> 
-                </li>
-                <li>
-                  <p><i class="fas fa-toilet"></i> 3 B</p> 
-              </li>
-              <li>
-                  <p><i class="fas fa-car"></i> 3 P</p> 
-              </li>
-            </ul>
-         </div>
-     </div>
-
-     <div class="card">
-         <img src="img/anuncio3.jpg" alt="anuncio3">
-         <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-         <div class="contenido-card">
-             <div class="encabezado">
-                 <h3>Casa de lujo</h3>
-                   <p class="precio">US$85,000</p>
-                 </div>
-               <hr>
-               <ul class="iconos">
-                <li>
-                    <p><i class="fas fa-bed"></i> 3 H</p> 
-                </li>
-                <li>
-                  <p><i class="fas fa-toilet"></i> 3 B</p> 
-              </li>
-              <li>
-                  <p><i class="fas fa-car"></i> 3 P</p> 
-              </li>
-            </ul>
-         </div>
-     </div>
-
-     <div class="card">
-      <img src="img/anuncio1.jpg" alt="anuncio1">
-      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-      <div class="contenido-card">
-          <div class="encabezado">
-          <h3>Casa de lujo</h3>
-            <p class="precio">US$85,000</p>
+<section class="container">
+  <h2 class="my-5">Propiedades recientes</h2>
+  <div class="row">
+       <div class="col-md-3 mb-4"><!--Card-->
+          <a href="propiedad.html" class="text-decoration-none">
+           <div class="card">
+       
+                  <div class="text-center">
+           <img src="img/anuncio1.jpg"  class="card-img-top" alt="anuncio1">
+           <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
           </div>
+           <div class="card-body">
+               <div class="d-block">
+               <h4 class="color">Casa de lujo</h4>
+               <div class="d-flex justify-content-between">
+                 <p class="font-weight-bold ">US$85,000</p>
+                 <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                 </div>
+               </div>
             <hr>
-            <ul class="iconos">
-              <li>
-                  <p><i class="fas fa-bed"></i> 3 H</p> 
-              </li>
-              <li>
-                <p><i class="fas fa-toilet"></i> 3 B</p> 
-            </li>
-            <li>
-                <p><i class="fas fa-car"></i> 3 P</p> 
-            </li>
-          </ul>
-      </div>
-  </div>
-
-  <div class="card">
-      <img src="img/anuncio2.jpg" alt="anuncio2">
-      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-      <div class="contenido-card">
-          <div class="encabezado">
-              <h3>Casa de lujo</h3>
-                <p class="precio">US$85,000</p>
+                 <div class="d-flex flex-row justify-content-center text-muted" >
+                  <div class="pr-5">
+                      <i class="fas fa-bed"></i> 3 H
+                  </div>
+                  <div class="pr-5">
+                    <i class="fas fa-bath"></i> 3 B
+                </div>
+                <div class="">
+                  <i class="fas fa-car"></i> 3 P
+                </div>
+          </div>
+           </div>
+          </div>
+      </a>
+       </div> <!--End-card-->
+  
+       <div class="col-md-3 mb-4"><!--Card-->
+          <a href="propiedad.html" class="text-decoration-none">
+           <div class="card">
+       
+                  <div class="text-center">
+           <img src="img/anuncio2.jpg"  class="card-img-top" alt="anuncio1">
+           <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+          </div>
+           <div class="card-body">
+               <div class="d-block">
+               <h4 class="color">Casa de lujo</h4>
+               <div class="d-flex justify-content-between">
+                 <p class="font-weight-bold ">US$85,000</p>
+                 <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                 </div>
+               </div>
+            <hr>
+                 <div class="d-flex flex-row justify-content-center text-muted" >
+                  <div class="pr-5">
+                      <i class="fas fa-bed"></i> 3 H
+                  </div>
+                  <div class="pr-5">
+                    <i class="fas fa-bath"></i> 3 B
+                </div>
+                <div class="">
+                  <i class="fas fa-car"></i> 3 P
+                </div>
+          </div>
+           </div>
+          </div>
+      </a>
+       </div> <!--End-card-->
+  
+       <div class="col-md-3 mb-4"><!--Card-->
+          <a href="propiedad.html" class="text-decoration-none">
+           <div class="card">
+       
+                  <div class="text-center">
+           <img src="img/anuncio3.jpg"  class="card-img-top" alt="anuncio1">
+           <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+          </div>
+           <div class="card-body">
+               <div class="d-block">
+               <h4 class="color">Casa de lujo</h4>
+               <div class="d-flex justify-content-between">
+                 <p class="font-weight-bold ">US$85,000</p>
+                 <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                 </div>
+               </div>
+            <hr>
+                 <div class="d-flex flex-row justify-content-center text-muted" >
+                  <div class="pr-5">
+                      <i class="fas fa-bed"></i> 3 H
+                  </div>
+                  <div class="pr-5">
+                    <i class="fas fa-bath"></i> 3 B
+                </div>
+                <div class="">
+                  <i class="fas fa-car"></i> 3 P
+                </div>
+          </div>
+           </div>
+          </div>
+      </a>
+       </div> <!--End-card-->
+  
+       <div class="col-md-3 mb-4"><!--Card-->
+          <a href="propiedad.html" class="text-decoration-none">
+           <div class="card">
+       
+                  <div class="text-center">
+           <img src="img/anuncio4.jpg"  class="card-img-top" alt="anuncio1">
+           <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+          </div>
+           <div class="card-body">
+               <div class="d-block">
+               <h4 class="color">Casa de lujo</h4>
+               <div class="d-flex justify-content-between">
+                 <p class="font-weight-bold ">US$85,000</p>
+                 <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                 </div>
+               </div>
+            <hr>
+                 <div class="d-flex flex-row justify-content-center text-muted" >
+                  <div class="pr-5">
+                      <i class="fas fa-bed"></i> 3 H
+                  </div>
+                  <div class="pr-5">
+                    <i class="fas fa-bath"></i> 3 B
+                </div>
+                <div class="">
+                  <i class="fas fa-car"></i> 3 P
+                </div>
+          </div>
+           </div>
+          </div>
+      </a>
+       </div> <!--End-card-->
+  
+       <div class="col-md-3 mb-4"><!--Card-->
+        <a href="propiedad.html" class="text-decoration-none">
+         <div class="card">
+     
+                <div class="text-center">
+         <img src="img/anuncio1.jpg"  class="card-img-top" alt="anuncio1">
+         <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+        </div>
+         <div class="card-body">
+             <div class="d-block">
+             <h4 class="color">Casa de lujo</h4>
+             <div class="d-flex justify-content-between">
+               <p class="font-weight-bold ">US$85,000</p>
+               <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+               </div>
+             </div>
+          <hr>
+               <div class="d-flex flex-row justify-content-center text-muted" >
+                <div class="pr-5">
+                    <i class="fas fa-bed"></i> 3 H
+                </div>
+                <div class="pr-5">
+                  <i class="fas fa-bath"></i> 3 B
               </div>
-            <hr>
-            <ul class="iconos">
-              <li>
-                  <p><i class="fas fa-bed"></i> 3 H</p> 
-              </li>
-              <li>
-                <p><i class="fas fa-toilet"></i> 3 B</p> 
-            </li>
-            <li>
-                <p><i class="fas fa-car"></i> 3 P</p> 
-            </li>
-          </ul>
-      </div>
-  </div>
-
-  <div class="card">
-      <img src="img/anuncio3.jpg" alt="anuncio3">
-      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-      <div class="contenido-card">
-          <div class="encabezado">
-              <h3>Casa de lujo</h3>
-                <p class="precio">US$85,000</p>
+              <div class="">
+                <i class="fas fa-car"></i> 3 P
               </div>
-            <hr>
-            <ul class="iconos">
-              <li>
-                  <p><i class="fas fa-bed"></i> 3 H</p> 
-              </li>
-              <li>
-                <p><i class="fas fa-toilet"></i> 3 B</p> 
-            </li>
-            <li>
-                <p><i class="fas fa-car"></i> 3 P</p> 
-            </li>
-          </ul>
-      </div>
-  </div>
+        </div>
+         </div>
+        </div>
+    </a>
+     </div> <!--End-card-->
 
-  <div class="card">
-      <img src="img/anuncio3.jpg" alt="anuncio3">
-      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-      <div class="contenido-card">
-          <div class="encabezado">
-              <h3>Casa de lujo</h3>
-                <p class="precio">US$85,000</p>
+     <div class="col-md-3 mb-4"><!--Card-->
+        <a href="propiedad.html" class="text-decoration-none">
+         <div class="card">
+     
+                <div class="text-center">
+         <img src="img/anuncio2.jpg"  class="card-img-top" alt="anuncio1">
+         <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+        </div>
+         <div class="card-body">
+             <div class="d-block">
+             <h4 class="color">Casa de lujo</h4>
+             <div class="d-flex justify-content-between">
+               <p class="font-weight-bold ">US$85,000</p>
+               <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+               </div>
+             </div>
+          <hr>
+               <div class="d-flex flex-row justify-content-center text-muted" >
+                <div class="pr-5">
+                    <i class="fas fa-bed"></i> 3 H
+                </div>
+                <div class="pr-5">
+                  <i class="fas fa-bath"></i> 3 B
               </div>
-            <hr>
-            <ul class="iconos">
-              <li>
-                  <p><i class="fas fa-bed"></i> 3 H</p> 
-              </li>
-              <li>
-                <p><i class="fas fa-toilet"></i> 3 B</p> 
-            </li>
-            <li>
-                <p><i class="fas fa-car"></i> 3 P</p> 
-            </li>
-          </ul>
-      </div>
-  </div>
+              <div class="">
+                <i class="fas fa-car"></i> 3 P
+              </div>
+        </div>
+         </div>
+        </div>
+    </a>
+     </div> <!--End-card-->
 
-</div><!--END CARDS-->
-      <div class="orienta">
-    <a href="#" class="btn btn-primario"> Ver Más Propiedades <i class="fas fa-arrow-right"></i> </a>
-</div>
+     <div class="col-md-3 mb-4"><!--Card-->
+        <a href="propiedad.html" class="text-decoration-none">
+         <div class="card">
+     
+                <div class="text-center">
+         <img src="img/anuncio3.jpg"  class="card-img-top" alt="anuncio1">
+         <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+        </div>
+         <div class="card-body">
+             <div class="d-block">
+             <h4 class="color">Casa de lujo</h4>
+             <div class="d-flex justify-content-between">
+               <p class="font-weight-bold ">US$85,000</p>
+               <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+               </div>
+             </div>
+          <hr>
+               <div class="d-flex flex-row justify-content-center text-muted" >
+                <div class="pr-5">
+                    <i class="fas fa-bed"></i> 3 H
+                </div>
+                <div class="pr-5">
+                  <i class="fas fa-bath"></i> 3 B
+              </div>
+              <div class="">
+                <i class="fas fa-car"></i> 3 P
+              </div>
+        </div>
+         </div>
+        </div>
+    </a>
+     </div> <!--End-card-->
+
+     <div class="col-md-3 mb-4"><!--Card-->
+        <a href="propiedad.html" class="text-decoration-none">
+         <div class="card">
+     
+                <div class="text-center">
+         <img src="img/anuncio4.jpg"  class="card-img-top" alt="anuncio1">
+         <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+        </div>
+         <div class="card-body">
+             <div class="d-block">
+             <h4 class="color">Casa de lujo</h4>
+             <div class="d-flex justify-content-between">
+               <p class="font-weight-bold ">US$85,000</p>
+               <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+               </div>
+             </div>
+          <hr>
+               <div class="d-flex flex-row justify-content-center text-muted" >
+                <div class="pr-5">
+                    <i class="fas fa-bed"></i> 3 H
+                </div>
+                <div class="pr-5">
+                  <i class="fas fa-bath"></i> 3 B
+              </div>
+              <div class="">
+                <i class="fas fa-car"></i> 3 P
+              </div>
+        </div>
+         </div>
+        </div>
+    </a>
+     </div> <!--End-card-->
+     
+  </div><!--END CARDS-->
+        <div class="orienta">
+      <a href="#" class="btn btn-primario"> Ver Más Propiedades <i class="fas fa-arrow-right"></i> </a>
+  </div>
+  
+  </section>
 </main><!--END MAIN-->
 
 <section class="imagen-contacto parallax margen" >

@@ -53,9 +53,12 @@
 </header><!-------END HEADER---------->
 
 <main class="site-catalogo">
+
+  
+
          <div class="result">
 
-            <div class="filter py-5">
+            <div class="filter py-5 collapse" id="navbarSupportedContent">
                  
                     <h3>Filtros de Búsqueda</h3>
                     <div class="filter-search container">
@@ -137,29 +140,34 @@
            </div><!---end-filter-->
 
 
-           <div class="result-content central-contenido">
-            <div class="buscador central-contenido">
+           <div class="result-content ">
+            <div class="buscador container">
         
-              <div class="action ">
+            
+              <div class="action">
                   <label><input type="radio" name="action" value="1" class="label1"  checked ><span>Comprar</span></label>
                   <label><input type="radio" name="action" value="2"  class="label2"><span>Alquilar</span></label>
               </div>
-              <form class="search ">
+              <form class="search">
               <input type="text" name="" class="text" placeholder="¿Qué estás buscando?">
-            <input type="submit" name="" class="submit fas fa-search" value="Buscar"> 
+            <button  type="submit" name="" class="submit2 btn btn-primario"><i class="fas fa-search"></i> <span style="display: none;">Buscar</span></button>
           </form>
         </div>
-  
-          
               
-            <div class="central-contenido pt-5">
-              <h4>Resultados de su búsqueda</h4>
-              <hr>
-            </div>
-            
-
-          <div class="container">
         
+        <div class="d-flex justify-content-between container py-5">
+          
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                <i class="fas fa-sliders-h pr-3"></i>Filtros<span class="navbar-toggler-icon "></span>
+              </button>
+           
+              <h4>Resultados de su búsqueda</h4>
+           
+            </div>
+          
+         
+          <div class="container">
+         
             <div class="row">
                <div class="col-md-3 mb-3"><!--CARD-->
                    <div class="card text-center">

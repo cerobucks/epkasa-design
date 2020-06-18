@@ -90,7 +90,7 @@
         <div class="col-md">
           <div class="descripcion ">
               <div class="contenido-descripcion">
-            <h2 class="pt-3">Apartamentos en venta en Residencial Don Bosco.</h2>
+            <h2 class="pt-5">Apartamentos en venta en Residencial Don Bosco.</h2>
                
              
                 <p class="ubicacion2"><i class="fas fa-map-marker-alt"></i> Santiago</p>
@@ -134,14 +134,14 @@
 <main class="container" >
 
          <div class="info">
-<h1 class="pt-5">Descripción</h1>
+<h2 class="pt-5">Descripción</h2>
 <p class="margin2">Residencial Don Bosco es un proyecto de apartamentos estilo resort ubicados en Pontezuela Ave. 27 de febrero.
     Nos place presentarles este hermoso proyecto de apartamentos en planos ubicado en una de las avenidas más céntricas de esta ciudad de Santiago 27 de febrero, próximo a supermercados centros comerciales colegios y vías de transporte etc. </p>
 
 <hr>
 
                     <fieldset class="margin2">
-                      <legend><h2>Características</h2></legend>
+                      <legend><h2 class="pb-5">Características</h2></legend>
                   <div class="features flex">
        <ul>
          <li><span>0</span> Patio</li>
@@ -185,200 +185,257 @@
           
 
             </div>
-</main>
-   <section class="container">
-<h2 class="text-titulo">Propiedades Recientes</h2>
-<div class="cards">
-     <div class="card">
-         <img src="img/anuncio1.jpg" alt="anuncio1">
-         <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-         <div class="contenido-card">
-             <div class="encabezado">
-             <h3>Casa de lujo</h3>
-               <p class="precio">US$85,000</p>
+            <hr>
+
+            <div class="container py-5">
+              <h2 class="pb-5">Forma de Pago</h2>
+             <div class="row ">
+                    <div class="col-md-6">
+                         <div> 
+                           <p><span class="color font-weight-bold">Separacion: </span> 50,000.00 RD$/US$</p>
+                         </div>
+                         <div> 
+                           <p><span class="color font-weight-bold"> Inicial 30%: </span>300,000.00 RD$/US$</p>
+                         </div>
+                         <div> 
+                           <p><span class="color font-weight-bold"> Inicial 12 cuotas: </span>20,833.33 RD$/US$</p>
+                         </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div> 
+                       <p><span class="color font-weight-bold">Fecha Entrega:</span> 15-06-2021</p>
+                     </div>
+                     <div> 
+                       <p><span class="color font-weight-bold">Con la Entrega:</span> 700,000.00 RD$/US$</p>
+                     </div>
+                     <div> 
+                       <p><span class="color font-weight-bold">Financiamiento</span>: Disponible</p>
+                     </div>
+                    </div>
              </div>
-               <hr>
-               <ul class="iconos">
-                <li>
-                    <p><i class="fas fa-bed"></i> 3 H</p> 
-                </li>
-                <li>
-                  <p><i class="fas fa-toilet"></i> 3 B</p> 
-              </li>
-              <li>
-                  <p><i class="fas fa-car"></i> 3 P</p> 
-              </li>
-            </ul>
-         </div>
-     </div>
+             </div>
+             
+ <hr>             
+</main>
+<div class="detail-contact detail-block target-block container">
+  <div class="row">
+<div class="col-sm-12 py-5">
+<div class="panel panel-default" style="border-color:#002c60">
+  <div class="panel-body">
+      <div class="row">
+          <div class="col-sm-6 py-5">
+              <h2 style="margin-top: 0; margin-bottom: 15px;">Calculadora Hipotecaria</h2>
+              <div class="form-group" style="margin-bottom: 18px;">
+                  <label for="prima">Aporte inicial <small>(US$)</small></label>
+                  <input class="form-control" type="text" id="prima" value="0" data-val="183344">
+              </div>
+              <div class="form-group" style="margin-bottom: 18px;">
+                  <label for="interes">Tasa de interés anual</label>
+                  <select id="interes" class="form-control h">
+                      <option value="7">7%</option>
+                      <option value="8">8%</option>
+                      <option value="9">9%</option>
+                      <option value="10" selected="">10%</option>
+                      <option value="11">11%</option>
+                      <option value="12">12%</option>
+                  </select>
+              </div>
+              <div class="form-group" style="margin-bottom: 15px;">
+                  <label for="plazo">Plazo</label>
+                  <select id="plazo" class="form-control h">
+                      <option value="5">5 años</option>
+                      <option value="10">10 años</option>
+                      <option value="15">15 años</option>
+                      <option value="20">20 años</option>
+                  </select>
+              </div>
 
-     <div class="card">
-         <img src="img/anuncio2.jpg" alt="anuncio2">
-         <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-         <div class="contenido-card">
-             <div class="encabezado">
-                 <h3>Casa de lujo</h3>
-                   <p class="precio">US$85,000</p>
-                 </div>
-               <hr>
-               <ul class="iconos">
-                <li>
-                    <p><i class="fas fa-bed"></i> 3 H</p> 
-                </li>
-                <li>
-                  <p><i class="fas fa-toilet"></i> 3 B</p> 
-              </li>
-              <li>
-                  <p><i class="fas fa-car"></i> 3 P</p> 
-              </li>
-            </ul>
-         </div>
-     </div>
+              <button type="button" id="calcular-hipoteca" onclick="calculo_hipoteca(183344)" class="btn btn-primario"><i class="fa fa-calculator"></i> CALCULAR</button>
 
-     <div class="card">
-         <img src="img/anuncio3.jpg" alt="anuncio3">
-         <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-         <div class="contenido-card">
-             <div class="encabezado">
-                 <h3>Casa de lujo</h3>
-                   <p class="precio">US$85,000</p>
-                 </div>
-               <hr>
-               <ul class="iconos">
-                <li>
-                    <p><i class="fas fa-bed"></i> 3 H</p> 
-                </li>
-                <li>
-                  <p><i class="fas fa-toilet"></i> 3 B</p> 
-              </li>
-              <li>
-                  <p><i class="fas fa-car"></i> 3 P</p> 
-              </li>
-            </ul>
-         </div>
-     </div>
-
-     <div class="card">
-         <img src="img/anuncio3.jpg" alt="anuncio3">
-         <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-         <div class="contenido-card">
-             <div class="encabezado">
-                 <h3>Casa de lujo</h3>
-                   <p class="precio">US$85,000</p>
-                 </div>
-               <hr>
-               <ul class="iconos">
-                <li>
-                    <p><i class="fas fa-bed"></i> 3 H</p> 
-                </li>
-                <li>
-                  <p><i class="fas fa-toilet"></i> 3 B</p> 
-              </li>
-              <li>
-                  <p><i class="fas fa-car"></i> 3 P</p> 
-              </li>
-            </ul>
-         </div>
-     </div>
-
-     <div class="card">
-      <img src="img/anuncio1.jpg" alt="anuncio1">
-      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-      <div class="contenido-card">
-          <div class="encabezado">
-          <h3>Casa de lujo</h3>
-            <p class="precio">US$85,000</p>
           </div>
-            <hr>
-            <ul class="iconos">
-              <li>
-                  <p><i class="fas fa-bed"></i> 3 H</p> 
-              </li>
-              <li>
-                <p><i class="fas fa-toilet"></i> 3 B</p> 
-            </li>
-            <li>
-                <p><i class="fas fa-car"></i> 3 P</p> 
-            </li>
-          </ul>
-      </div>
-  </div>
-
-  <div class="card">
-      <img src="img/anuncio2.jpg" alt="anuncio2">
-      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-      <div class="contenido-card">
-          <div class="encabezado">
-              <h3>Casa de lujo</h3>
-                <p class="precio">US$85,000</p>
+          <div class="col-sm-6">
+              <div class="panel panel-default p-5" style="background-color: rgba(236, 236, 236, 0.349); border-radius: 5px; border: 1px solid #8989899c;;">
+                  <div class="panel-body">
+                      <div class="form-group" style="margin-bottom: 0px;">
+                          <label style="font-weight: normal; margin-bottom: 0; color: #898989; font-size: 11px;">Valor de Propiedad</label>
+                          <p id="valor-propiedad" class="form-control-static" style="font-weight: bold; padding: 0; min-height: 0; font-size: 14px; color: #444444;">US$ 0</p>
+                      </div>
+                      <hr style="margin-top: 2px; margin-bottom: 2px;">
+                      <div class="form-group" style="margin-bottom: 0px;">
+                          <label style="font-weight: normal; margin-bottom: 0;  color: #898989; font-size: 11px;">Cuota Mensual</label>
+                          <p id="cuota" class="form-control-static" style="font-weight: bold; padding: 0px; min-height: 0px; font-size: 14px; color: rgb(68, 68, 68);">US$ 0</p>
+                      </div>
+                      <hr style="margin-top: 2px; margin-bottom: 2px;">
+                      <div class="form-group" style="margin-bottom: 0px;">
+                          <label style="font-weight: normal; margin-bottom: 0;  color: #898989; font-size: 11px;">Intereses</label>
+                          <p id="intereses" class="form-control-static" style="font-weight: bold; padding: 0px; min-height: 0px; font-size: 14px; color: rgb(68, 68, 68);">US$ 0</p>
+                      </div>
+                      <hr style="margin-top: 2px; margin-bottom: 2px;">
+                      <div class="form-group" style="margin-bottom: 0px;">
+                          <label style="font-weight: normal; margin-bottom: 0;  color: #898989; font-size: 11px;">Meses</label>
+                          <p id="meses" class="form-control-static" style="font-weight: bold; padding: 0px; min-height: 0px; font-size: 14px; color: rgb(68, 68, 68);">0</p>
+                      </div>
+                      <hr style="margin-top: 2px; margin-bottom: 2px;">
+                      <div class="form-group" style="margin-bottom: 0px;">
+                          <label style="font-weight: normal; margin-bottom: 0;  color: #898989; font-size: 11px;">Total</label>
+                          <p id="total" class="form-control-static" style="font-weight: bold; padding: 0px; min-height: 0px; font-size: 16px; color: rgb(0, 0, 0);">US$ 0</p>
+                      </div>
+                  </div>
               </div>
-            <hr>
-            <ul class="iconos">
-              <li>
-                  <p><i class="fas fa-bed"></i> 3 H</p> 
-              </li>
-              <li>
-                <p><i class="fas fa-toilet"></i> 3 B</p> 
-            </li>
-            <li>
-                <p><i class="fas fa-car"></i> 3 P</p> 
-            </li>
-          </ul>
+              
+              <button type="button" id="solicitar_preaprobacion" class="btn btn-success"><i class="far fa-file-alt"></i> SOLICITAR PRE-APROBACIÓN</button>
+          </div>
       </div>
   </div>
-
-  <div class="card">
-      <img src="img/anuncio3.jpg" alt="anuncio3">
-      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-      <div class="contenido-card">
-          <div class="encabezado">
-              <h3>Casa de lujo</h3>
-                <p class="precio">US$85,000</p>
-              </div>
-            <hr>
-            <ul class="iconos">
-              <li>
-                  <p><i class="fas fa-bed"></i> 3 H</p> 
-              </li>
-              <li>
-                <p><i class="fas fa-toilet"></i> 3 B</p> 
-            </li>
-            <li>
-                <p><i class="fas fa-car"></i> 3 P</p> 
-            </li>
-          </ul>
-      </div>
-  </div>
-
-  <div class="card">
-      <img src="img/anuncio3.jpg" alt="anuncio3">
-      <p><i class="fas fa-map-marker-alt"></i> Santiago</p>
-      <div class="contenido-card">
-          <div class="encabezado">
-              <h3>Casa de lujo</h3>
-                <p class="precio">US$85,000</p>
-              </div>
-            <hr>
-            <ul class="iconos">
-              <li>
-                  <p><i class="fas fa-bed"></i> 3 H</p> 
-              </li>
-              <li>
-                <p><i class="fas fa-toilet"></i> 3 B</p> 
-            </li>
-            <li>
-                <p><i class="fas fa-car"></i> 3 P</p> 
-            </li>
-          </ul>
-      </div>
-  </div>
-
-</div><!--END CARDS-->
-      <div class="orienta">
-    <a href="#" class="btn btn-primario"> Ver Más Propiedades <i class="fas fa-arrow-right"></i> </a>
 </div>
 
-</section>
+</div>
+</div>			</div>
+<hr>
+
+
+<section class="container">
+  <h2 class="text-titulo py-5">Propiedades Recientes</h2>
+  <div class="row">
+       <div class="col-md-3 mb-3"><!--Card-->
+          <a href="propiedad.html" class="text-decoration-none">
+           <div class="card">
+       
+                  <div class="text-center">
+           <img src="img/anuncio1.jpg"  class="card-img-top" alt="anuncio1">
+           <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+          </div>
+           <div class="card-body">
+               <div class="d-block">
+               <h4 class="color">Casa de lujo</h4>
+               <div class="d-flex justify-content-between">
+                 <p class="font-weight-bold ">US$85,000</p>
+                 <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                 </div>
+               </div>
+            <hr>
+                 <div class="d-flex flex-row justify-content-center text-muted" >
+                  <div class="pr-5">
+                      <i class="fas fa-bed"></i> 3 H
+                  </div>
+                  <div class="pr-5">
+                    <i class="fas fa-bath"></i> 3 B
+                </div>
+                <div class="">
+                  <i class="fas fa-car"></i> 3 P
+                </div>
+          </div>
+           </div>
+          </div>
+      </a>
+       </div> <!--End-card-->
+  
+       <div class="col-md-3 mb-3"><!--Card-->
+          <a href="propiedad.html" class="text-decoration-none">
+           <div class="card">
+       
+                  <div class="text-center">
+           <img src="img/anuncio2.jpg"  class="card-img-top" alt="anuncio1">
+           <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+          </div>
+           <div class="card-body">
+               <div class="d-block">
+               <h4 class="color">Casa de lujo</h4>
+               <div class="d-flex justify-content-between">
+                 <p class="font-weight-bold ">US$85,000</p>
+                 <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                 </div>
+               </div>
+            <hr>
+                 <div class="d-flex flex-row justify-content-center text-muted" >
+                  <div class="pr-5">
+                      <i class="fas fa-bed"></i> 3 H
+                  </div>
+                  <div class="pr-5">
+                    <i class="fas fa-bath"></i> 3 B
+                </div>
+                <div class="">
+                  <i class="fas fa-car"></i> 3 P
+                </div>
+          </div>
+           </div>
+          </div>
+      </a>
+       </div> <!--End-card-->
+  
+       <div class="col-md-3 mb-3"><!--Card-->
+          <a href="propiedad.html" class="text-decoration-none">
+           <div class="card">
+       
+                  <div class="text-center">
+           <img src="img/anuncio3.jpg"  class="card-img-top" alt="anuncio1">
+           <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+          </div>
+           <div class="card-body">
+               <div class="d-block">
+               <h4 class="color">Casa de lujo</h4>
+               <div class="d-flex justify-content-between">
+                 <p class="font-weight-bold ">US$85,000</p>
+                 <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                 </div>
+               </div>
+            <hr>
+                 <div class="d-flex flex-row justify-content-center text-muted" >
+                  <div class="pr-5">
+                      <i class="fas fa-bed"></i> 3 H
+                  </div>
+                  <div class="pr-5">
+                    <i class="fas fa-bath"></i> 3 B
+                </div>
+                <div class="">
+                  <i class="fas fa-car"></i> 3 P
+                </div>
+          </div>
+           </div>
+          </div>
+      </a>
+       </div> <!--End-card-->
+  
+       <div class="col-md-3 mb-3"><!--Card-->
+          <a href="propiedad.html" class="text-decoration-none">
+           <div class="card">
+       
+                  <div class="text-center">
+           <img src="img/anuncio4.jpg"  class="card-img-top" alt="anuncio1">
+           <small class="pt-2 text-muted"><i class="fas fa-map-marker-alt"></i> Santiago</small>
+          </div>
+           <div class="card-body">
+               <div class="d-block">
+               <h4 class="color">Casa de lujo</h4>
+               <div class="d-flex justify-content-between">
+                 <p class="font-weight-bold ">US$85,000</p>
+                 <a href="" class="" onclick=""><i class="far fa-heart"></i></a>
+                 </div>
+               </div>
+            <hr>
+                 <div class="d-flex flex-row justify-content-center text-muted" >
+                  <div class="pr-5">
+                      <i class="fas fa-bed"></i> 3 H
+                  </div>
+                  <div class="pr-5">
+                    <i class="fas fa-bath"></i> 3 B
+                </div>
+                <div class="">
+                  <i class="fas fa-car"></i> 3 P
+                </div>
+          </div>
+           </div>
+          </div>
+      </a>
+       </div> <!--End-card-->
+  
+     
+  </div><!--END CARDS-->
+        <div class="orienta">
+      <a href="#" class="btn btn-primario"> Ver Más Propiedades <i class="fas fa-arrow-right"></i> </a>
+  </div>
+  
+  </section>
 
 
     <!------------------------------FOOTER----------------------------->
